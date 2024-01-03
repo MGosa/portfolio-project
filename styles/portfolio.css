@@ -8,7 +8,8 @@ body {
   font-family: var(--primary-font);
 }
 h1,
-h2 {
+h2,
+h3 {
   font-family: var(--display-font);
   font-weight: bold;
 }
@@ -25,22 +26,31 @@ p {
   line-height: 30px;
 }
 
-.about{
+.content-container{
   padding: 160px 40px;
 }
-.about-content{
+.content{
   margin: 30px;
 }
-.about-content h1{
+.content h1{
   font-size: 64px;
   font-family: var(--display-font);
   line-height: 80px;
 }
-.about-content h2{
+.content h2{
 font-size: 18px;
 font-family: var(--primary-font);
 }
-.about img{
+.content h3{
+  font-size: 24px;
+  font-family: var(--primary-font);
+  line-height: 1.5;
+  margin: 20px 0 0;
+}
+.content p{
+  font-size: 14px;
+}
+.hero-img {
   border-radius: 10px;
   max-width: 80%;
   margin-left: 100px;
@@ -97,11 +107,11 @@ font-family: var(--primary-font);
     padding: 0;
     text-align: center;
   }
-  .about{
+  .content{
     text-align: center;
     padding: 0;
   }
-  .about img{
+  .hero-img {
     max-width: 100%;
     margin: 0;
     max-height: 100%;
