@@ -52,9 +52,10 @@ font-family: var(--primary-font);
 }
 .hero-img {
   border-radius: 10px;
-  max-width: 80%;
-  margin-left: 100px;
   max-height: 80%;
+  display: block;
+  margin: 0 auto;
+ max-width: 80%;
 }
 .hero h1 {
   margin: 0;
@@ -96,7 +97,7 @@ font-family: var(--primary-font);
   padding: 50px 60px;
 }
 .logo{
-  max-width: 150px;
+ max-width: 150px;
 }
 nav{
   padding: 20px 0;
@@ -110,6 +111,17 @@ nav li{
   display: inline;
   list-style: none;
   line-height: 40px;
+  margin-left: 15px;
+}
+nav a{
+  text-decoration: none;
+  color: #272142;
+  transition: all 150ms ease-in-out;
+
+}
+
+nav a:hover,nav li.active a{
+  color: var(--primary-color);
 }
 @media (max-width: 900px) {
   h1 {
@@ -131,6 +143,10 @@ nav li{
     max-width: 100%;
     margin: 0;
     max-height: 100%;
+  }
+  nav ul{
+    display: block;
+    margin: 0 auto;
   }
 }
 
