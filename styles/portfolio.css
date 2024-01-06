@@ -9,8 +9,7 @@ body {
 }
 h1,
 h2,
-h3,
-h4{
+h3{
   font-family: var(--display-font);
   font-weight: bold;
 }
@@ -21,7 +20,7 @@ h1 {
 h2 {
   font-size: 64px;
 }
-h4{
+h3{
   font-size: 48px;
 }
 p {
@@ -31,8 +30,13 @@ p {
 }
 
 .content-container{
-  padding: 160px 40px;
+  padding: 60px 40px;
 }
+.content-container img{
+ box-shadow:rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+}
+
 .content{
   margin: 30px;
 }
@@ -68,6 +72,7 @@ font-family: var(--primary-font);
   font-weight: bold;
   font-size: 36px;
   margin: 0;
+  font-family: var();
 }
 .hero h2 {
   font-weight: normal;
@@ -94,7 +99,7 @@ font-family: var(--primary-font);
 }
 .hero {
   background-color: var(--secondary-color);
-  padding: 160px 30px;
+  padding: 80px 30px;
   text-align: center;
 }
 .project-description {
@@ -138,6 +143,9 @@ footer .work-inquiry-box {
 footer .work-inquiry-box p{
   margin: 0;
 }
+footer .work-inquiry-box h3{
+  font-size: 48px;
+}
 footer .email-link{
   text-decoration: none;
   color: black;
@@ -175,14 +183,12 @@ footer .social-link a:hover{
     text-align: center;
     padding: 0;
   }
-  .hero-img {
-    max-width: 100%;
-    margin: 0;
-    max-height: 100%;
-  }
+ 
   nav ul{
     display: block;
     margin: 0 auto;
+    font-size: 15px;
+
   }
 }
 
